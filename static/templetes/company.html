@@ -1,0 +1,26 @@
+<ion-view title="Company page">
+	<ion-content>
+		<form ng-submit="com()" method="POST">
+			<div class="list">
+         <label class="item item-input item-stacked-label">
+         <span class="input-label">Company Name</span>
+          <input type="text" placeholder="" ng-model="com.companyname">
+         </label>
+         <label class="item item-input item-stacked-label">
+           <span class="input-label">Copany Address</span>
+          <input type="text" placeholder="" ng-model="com.address">
+        </label>
+         <label class="item item-input item-stacked-label">
+           <span class="input-label">Email</span>
+          <input type="text" placeholder="" ng-model="com.email">
+        </label>
+        </div>
+			
+			
+			<div class="button-bar">
+				<button class="button button-positive" type="submit" >Register Company</button>
+	
+			</div>
+		</form>
+	</ion-content>
+</ion-view>

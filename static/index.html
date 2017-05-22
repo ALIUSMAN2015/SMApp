@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+
+  <link href="./lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+  <link href="css/ionic.app.css" rel="stylesheet">
+  -->
+
+  <!-- ionic/angularjs js -->
+  <script src="./lib/ionic/js/ionic.bundle.js"></script>
+
+
+  <!-- your app's js -->
+  <script src="./js/app.js"></script>
+  <script src="./js/controller.js"></script>
+</head>
+  <body ng-app="starter">
+         <img src="\photo\My photo\sheep\11709836_10155770373305504_7895594365808953340_n.jpg">
+    <ion-pane>
+      <ion-header-bar class="bar bar-header bar-positive">
+        <h1 class="title">Sales Man App</h1>
+        <button class="button icon-left ion-home" ui-sref = "home" >Home</button>
+         <button class="button icon-left ion-signup" ui-sref = "signup">signup</button>
+          <button class="button icon-left ion-signin" ui-sref = "login">login</button>
+       
+       
+          </ion-header-bar>
+          
+      <ion-nav-view></ion-nav-view>
+    </ion-pane>
+        <ion-footer-bar class='bar bar-footer bar-positive'><h2 class='title'>Usman Ali</h2></ion-footer-bar>
+  </body>
+</html>

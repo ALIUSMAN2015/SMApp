@@ -1,0 +1,32 @@
+<ion-view view-title="SMLogin" name="login-view">
+  <ion-content class="padding">
+     <div class="list list-inset" ng-controller="smCtrl">
+      <table class="item item-input">
+          <thead>
+              <tr>
+                  <td>name</td>
+                  <td>Id</td>
+                  <td>Action</td>
+              </tr>
+          </thead>
+          <tbody>
+          <tr>
+              <td><input class="form-control" ng-model="sm.name" type="text" name="name"></td>
+              <td><input class="form-control" ng-model="sm.idnumber" type="number" required='required'></td>
+              <td><button ng-click="addsm()" class="button button-dark">Add</button></td>
+              <td><button ng-click="update()" class="button button-balanced">Update</button></td>
+          </tr>
+          <tr ng-repeat="sm in smlist">
+            <td>{{sm.name}}</td>
+            <td>{{sm.idnumber}}</td>
+            <td><button class="button button-assertive" ng-click="remove(sm._id)">Remove</button></td>
+            <td><button class="button button-positive" ng-click="edit(sm._id)">Edit</button></td>
+            </tr>
+            </tbody>
+        </table>
+        <tbody>
+        
+        </div>
+ 
+  </ion-content>
+</ion-view>
